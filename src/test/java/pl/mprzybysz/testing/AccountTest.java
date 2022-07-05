@@ -8,13 +8,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class AccountTest {
 
     @Test
-     void myTest(){
+     void newAccountShouldNotBeActiveAfterCreation(){
         //given and when
         Account newAccount = new Account();
         assertFalse(newAccount.isActive(), "Check if new account is not active");
     }
     @Test
-    void myTest2(){
+    void accountShouldBeActiveAfterActivation(){
         //given
         Account newAccount = new Account();
 
